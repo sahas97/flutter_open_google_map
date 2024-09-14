@@ -4,8 +4,8 @@
 
 FlutterMapNavigator is a simple and powerful Flutter app that allows users to open Google Maps with a given destination using text input. Whether you're looking to navigate to a specific place or just explore a new location, this app has you covered!
 
-![FlutterMapNavigator](https://img.shields.io/badge/flutter-v3.0-blue?logo=flutter)
-![Dart](https://img.shields.io/badge/dart-v2.17-blue?logo=dart)
+![FlutterMapNavigator](https://img.shields.io/badge/flutter-v3.24.0-blue?logo=flutter)
+![Dart](https://img.shields.io/badge/dart-v3.5.0-blue?logo=dart)
 
 ---
 
