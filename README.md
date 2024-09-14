@@ -41,5 +41,5 @@ Before you start, make sure you have the following installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/FlutterMapNavigator.git
+   git clone https://github.com/sahas97/flutter_open_google_map.git 
    cd FlutterMapNavigator
