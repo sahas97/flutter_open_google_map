@@ -10,7 +10,6 @@ class MapScreen extends StatefulWidget {
   State<MapScreen> createState() => _MapScreenState();
 }
 
-// <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 class _MapScreenState extends State<MapScreen> {
   final _formKey = GlobalKey<FormState>();
   final _locationController = TextEditingController();
