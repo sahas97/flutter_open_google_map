@@ -10,7 +10,6 @@ class MapScreen extends StatefulWidget {
   State<MapScreen> createState() => _MapScreenState();
 }
 
-// <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 class _MapScreenState extends State<MapScreen> {
   final _formKey = GlobalKey<FormState>();
   final _locationController = TextEditingController();
@@ -39,14 +38,14 @@ class _MapScreenState extends State<MapScreen> {
       );
 
       // Get destination coordinates and launch Google Maps
-      destinationLocation = await MapLuancher.getDestinationCoordinates(
+      destinationLocation = await MapLauncher.getDestinationCoordinates(
         _locationController.text,
       );
       if (context.mounted) {
         Navigator.of(context).pop(); // Remove loading indicator
       }
       if (destinationLocation != null) {
-        await MapLuancher.launchGoogleMaps(destinationLocation);
+        await MapLauncher.openMapApp(destinationLocation);
       } else {
         // Show error message
         if (context.mounted) {

@@ -4,8 +4,8 @@ import 'package:flutter_open_google_map/models/lat_lng.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class MapLuancher {
-  MapLuancher._();
+class MapLauncher {
+  MapLauncher._();
 
   static Future<LatLng?> getDestinationCoordinates(String address) async {
     try {
@@ -19,16 +19,13 @@ class MapLuancher {
     return null;
   }
 
-  static Future<void> launchGoogleMaps(LatLng? destinationLocation) async {
-    if (destinationLocation == null) {
-      log('Destination location is null');
-      return;
-    }
-    double destinationLatitude = destinationLocation.latitude;
-    double destinationLongitude = destinationLocation.longitude;
+  static Future<void> openMapApp(LatLng? destinationLocation) async {
     final uri = Uri(
       scheme: "google.navigation",
-      queryParameters: {'q': '$destinationLatitude, $destinationLongitude'},
+      queryParameters: {
+        'q':
+            '${destinationLocation?.latitude}, ${destinationLocation?.longitude}'
+      },
     );
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri);
