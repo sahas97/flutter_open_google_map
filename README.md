@@ -136,7 +136,7 @@ If you encounter any issues, please feel free to open a GitHub Issue. We welcome
 
 For a more detailed explanation of this project and its development, check out my Medium blog:
 
-[🌐 How to Open Google Maps in Flutter Using Just an Address]([https://medium.com/@yourusername/flutter-open-google-maps-with-text-input-and-latitude-longitude-navigation-xyz123](https://medium.com/@sahasuthpala24/how-to-open-google-maps-in-flutter-using-just-an-address-d41348e6435e))
+[🌐 How to Open Google Maps in Flutter Using Just an Address](https://medium.com/@sahasuthpala24/how-to-open-google-maps-in-flutter-using-just-an-address-d41348e6435e)
 
 In this blog, I cover:
 - 🌍 How to convert addresses to geographic coordinates
