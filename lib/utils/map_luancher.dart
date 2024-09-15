@@ -24,12 +24,11 @@ class MapLuancher {
       log('Destination location is null');
       return;
     }
-
+    double destinationLatitude = destinationLocation.latitude;
+    double destinationLongitude = destinationLocation.longitude;
     final uri = Uri(
       scheme: "google.navigation",
-      queryParameters: {
-        'q': '${destinationLocation.latitude}, ${destinationLocation.longitude}'
-      },
+      queryParameters: {'q': '$destinationLatitude, $destinationLongitude'},
     );
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri);
