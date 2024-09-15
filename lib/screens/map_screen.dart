@@ -45,7 +45,7 @@ class _MapScreenState extends State<MapScreen> {
         Navigator.of(context).pop(); // Remove loading indicator
       }
       if (destinationLocation != null) {
-        await MapLuancher.openMap(destinationLocation);
+        await MapLuancher.launchGoogleMaps(destinationLocation);
       } else {
         // Show error message
         if (context.mounted) {
