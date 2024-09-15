@@ -19,16 +19,12 @@ class MapLuancher {
     return null;
   }
 
-  static Future<void> launchGoogleMaps(LatLng? destinationLocation) async {
-    if (destinationLocation == null) {
-      log('Destination location is null');
-      return;
-    }
-
+  static Future<void> openMap(LatLng? destinationLocation) async {
     final uri = Uri(
       scheme: "google.navigation",
       queryParameters: {
-        'q': '${destinationLocation.latitude}, ${destinationLocation.longitude}'
+        'q':
+            '${destinationLocation?.latitude}, ${destinationLocation?.longitude}'
       },
     );
     if (await canLaunchUrl(uri)) {
