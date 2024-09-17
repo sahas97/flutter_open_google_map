@@ -58,7 +58,7 @@ Before you start, make sure you have the following installed:
    **For iOS:**
    ```bash
    flutter run --ios
-## 🛠 Folder Structure
+## 📁 Folder Structure
 ### The project is organized as follows:
 
 ```markdown
